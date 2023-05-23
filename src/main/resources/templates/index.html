@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body class="gray-bg">
+<div style="margin:50px 0 0 50px;">
+	<a href="javascript:openPdf();">预览PDF文件</a>
+	<br/>
+	<br/>
+	<a href="javascript:openOfd();">预览OFD文件</a>
+</div>
+<script th:inline="javascript">
+	function openPdf() {
+    	var url = "http://localhost:9088/pdfshow/viewer.html?file=http://localhost:9088/pdfshow/123.pdf";
+    	window.open(url);
+    }
+	/*viewer支持读取的文件有本地文件、url远程文件、file控件上传的文件，具体的可以到ofd.js中查找具体的使用方式*/
+	function openOfd() {
+		var url = "http://localhost:9088/ofdshow/viewer.html?file=http://localhost:9088/ofdshow/123.ofd";
+    	window.open(url);
+    }
+</script>
+</body>
+</html>
