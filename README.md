@@ -42,6 +42,9 @@ pdfbox
 
 参考demo中的电子发票读取
 
+定义本地发票路径【file_path】，重新运行可以批量重新定义发票名称
+
+
 效果如下：
 <img src='https://hanmanyi.club/images/123.png' style="max-width:50%;">
 ![解析结果](https://hanmanyi.club/images/111.png)
